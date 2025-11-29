@@ -1,0 +1,21 @@
+h5 {
+    background-color: lightgray;
+}
+
+div {
+    background-color: lightgreen;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+.bgAzul {
+    background-color: blue;
+    color: yellow;
+}
+
+#textoRojo {
+    color: grey;
+}

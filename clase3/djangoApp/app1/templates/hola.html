@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ruta hola</title>
+    </head>
+    <body>
+        <h1>Este es mi primer template</h1>
+        {% if nombre == 'Alexander' %}
+            <h2>El administrador ha ingresado</h2>
+        {% else %}
+            <h2>Usuario externo ha ingresado</h2>
+        {% endif %}
+        <h2>Hola {{ nombre }}</h2>
+
+        {% if mascotas %}
+            <h3>Lista de mascotas</h3>
+            <ol>
+                {% for elemento in mascotas %}
+                    <li>{{ elemento }}</li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+    </body>
+</html>

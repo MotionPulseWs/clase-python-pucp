@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Ejemplo Responsivo</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                background: #F5F5F5;
+            }
+            .caja {
+                background: lightblue;
+                text-align: center;
+                border: 2px solid darkblue;
+                border-radius: 8px;
+                font-weight: bold;
+                flex: 1 1 200px;
+                height: 100px;
+            }
+            .contenedor {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @media (max-width: 600px)
+            {
+                .contenedor {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+
+                .caja {
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Ejmplo de cajas</h1>
+        <div class="contenedor">
+            <div class="caja">1</div>
+            <div class="caja">2</div>
+            <div class="caja">3</div>
+            <div class="caja">4</div>
+            <div class="caja">5</div>
+        </div>
+    </body>
+</html>
