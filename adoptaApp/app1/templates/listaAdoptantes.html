@@ -15,6 +15,19 @@
       </tr>
     </thead>
     <tbody>
+      {% for adopcion in adopciones %}
+        <tr>
+          <td>{{ adopcion.mascota.nombre }}</td>
+          <td>{{ adopcion.persona.nombre }}</td>
+          <td>{{ adopcion.persona.email }}</td>
+          <td>{{ adopcion.persona.telefono }}</td>
+          <td>{{ adopcion.fecha_adopcion }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="5" class="text-muted text-center">Aun no hay adopciones registradas</td>
+        </tr>
+      {% endfor %}
     </tbody>
   </table>
 

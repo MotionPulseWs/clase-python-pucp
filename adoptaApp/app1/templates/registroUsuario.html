@@ -30,11 +30,22 @@
             <div class="col-md-5">
                 <div class="card shadow">
                     <div class="card-body">
+
+                        {% if messages %}
+                            {% for msg in messages %}
+                                <div class="alert alert-danger">
+                                    {{ msg }}
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+
+
                         <h3 class="text-center mb-4">
                             <i class="fa-solid fa-user-plus"></i> Regístrate
                         </h3>
 
-                        <form method="post" action="#">
+                        <form method="post" action="{% url 'app1:registro' %}">
+                            {% csrf_token %}
                             <div class="mb-3">
                                 <label class="form-label">Nombre de usuario</label>
                                 <input type="text" class="form-control" placeholder="Tu usuario" name="username">

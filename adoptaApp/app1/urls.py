@@ -11,5 +11,6 @@ urlpatterns = [
     path('crearMascota',views.crearMascota,name='crearMascota'),
     path('listaAdoptantes',views.listaAdoptantes,name='listaAdoptantes'),
     path('mascotasxtipo/<int:idTipo>',views.mascotasxtipo,name='mascotasxtipo'),
-    path('detalleMascota/<int:idMascota>',views.detalleMascota,name='detalleMascota')
+    path('detalleMascota/<int:idMascota>',views.detalleMascota,name='detalleMascota'),
+    path('cerrarSesion',views.cerrarSesion,name='cerrarSesion')
 ]
