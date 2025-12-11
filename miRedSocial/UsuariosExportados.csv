@@ -1,0 +1,5 @@
+id,username,email,first_name,last_name,password_hash,is_active,is_staff,is_superuser
+1,alexander,alexander@gmail.com,Alexander,Segovia,pbkdf2_sha256$1000000$noMDRC1pEeyliDVFsSXnDe$X+TEuaM6not+rrOCKV0q1IqgZSgpZxif0NvAygkDdoc=,True,True,True
+2,francisco,francisco@gmail.com,,,pbkdf2_sha256$1000000$FF50zM0uPbrN62cmUbUSES$LoBELyFv6BaaC93QRutXTpn/lTgBiTBCfOTrXXRgvyw=,True,True,True
+3,wilfredo,wilfredo@gmail.com,,,pbkdf2_sha256$1000000$gR5w5QnA6PVehhuLTXXAYt$2V6hjhS5IZTKEVYB9PvZ/IzOPc/xQ6hVDj105BWO5ys=,True,True,True
+4,catalina,catalina@gmail.com,,,pbkdf2_sha256$1000000$jOAZOljd5Oq6xxybM2UL6x$bvKMC/0SR83rUrNktAvpaatbip+yFXL0RQUd+sJ5my8=,True,True,True
